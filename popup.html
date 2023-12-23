@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>MyWebCapture</title>
+        <link rel="stylesheet" href="popup.css" type="text/css">
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li id="capture-download" class="mouseactive" style="display: block;">
+                    <div style="width:100%; display: flex">
+                        <div class="left" style="flex-grow:1; margin-right:2em;">
+                            <img src="images/capture.png">
+                            <span style="white-space: nowrap; padding-left: 10px;">Capture Page & Download</span>
+                        </div>
+                        <div class="right">
+                            <span>⌘⇧D</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="loading-capture-download-start" style="margin-top: 6px; display: none;">
+                    <div class="left">
+                        <span style="padding-left: 20px;">Capturing page</span> ... Please wait.
+                    </div>
+                </li>
+                <li class="loading-capture-download-finish" style="margin-top: 6px; display: none;">
+                    <div class="left">
+                        <span style="padding-left: 20px;">Capturing page</span> ... Done.
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>
